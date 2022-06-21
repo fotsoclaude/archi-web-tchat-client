@@ -1,1 +1,53 @@
-/* You can add global styles to this file, and also import other style files */
+/* For all parts */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+app-root{
+    display: grid;
+    grid-template-columns: repeat(4, 25vw);
+    grid-template-rows: 60px calc(100vh - 60px);
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+/* Own specification css */
+.d-flex{
+    display: flex;
+}
+.justify-content-end{
+    justify-content: end;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.align-items-center{
+    align-items: center;
+}
+
+.btn{
+    background-color: #a8def7;
+    color: #fff;
+    padding: 10px;
+    border-radius: 0.5vw;
+    transition: all 0.2s ease;
+}
+.btn:hover{
+    background-color: #16a6e9;
+}
+i{
+    margin-left: 7px;
+}
+
+.badge{
+    background-color: #11cccc;
+    padding: 0 5px;
+    border-radius: 5vw;
+    font-size: 0.5rem;
+    color: #fff;
+}
+
