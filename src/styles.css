@@ -19,9 +19,6 @@ app-root{
 .d-flex{
     display: flex;
 }
-.justify-content-end{
-    justify-content: end;
-}
 .justify-content-center{
     justify-content: center;
 }
@@ -30,14 +27,15 @@ app-root{
 }
 
 .btn{
-    background-color: #a8def7;
+    background-color: #6716e9;
     color: #fff;
-    padding: 10px;
-    border-radius: 0.5vw;
+    padding: 1vw;
+    border-radius: 5vw;
+    border: none;
     transition: all 0.2s ease;
 }
 .btn:hover{
-    background-color: #16a6e9;
+    background-color: #3e0d8c;
 }
 i{
     margin-left: 7px;

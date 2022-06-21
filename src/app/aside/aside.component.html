@@ -95,8 +95,9 @@
             <a href="#" (click)="onCloseModal(true)" ><i class="bi bi-x-lg"></i></a>
             <p>Nouvelle discussion</p>
         </div>
-        <div class="d-flex justify-content-center">
-            <input type="text" name="rechercher" id="rechercher" placeholder="Rechercher un contact..." class="search">
+        <div class="d-flex align-items-center">
+            <input type="search" name="rechercher" id="rechercher" placeholder="Rechercher un contact..." class="search">
+            <button (click)="onViewForm(false)" class="btn-icon d-flex align-items-center"><i class="bi bi-person-plus bx-sm"></i></button>
         </div>
         <div class="d-flex align-items-center contact">
             <div class="left">
@@ -162,4 +163,24 @@
             </div>
         </div>
     </div>
+</ng-template>
+
+<!-- Form to create a contact -->
+<span *ngIf="isViewForm; else formContact"></span>
+<ng-template #formContact>
+    <form id="contact" class="modal" [formGroup]="newContactForm">
+        <div class="d-flex title">
+            <a href="#" (click)="onViewForm(true)" ><i class="bi bi-x-lg"></i></a>
+            <p>Ajouter un contact</p>
+        </div>
+        <div class="d-flex justify-content-center">
+            <input type="text" name="name" id="name" placeholder="Nom et prénom" class="search" formControlName = "name">
+        </div>
+        <div class="d-flex justify-content-center">
+            <p>Insérer le module des téléphones ici !</p>
+        </div>
+        <div class="d-flex justify-content-center">
+            <input type="submit" value="Enregistrer" class="btn">
+        </div>
+    </form>
 </ng-template>

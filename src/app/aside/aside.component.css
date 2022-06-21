@@ -6,7 +6,6 @@
     border-radius: 0.5vw;
     padding: 10px 7px;
     width: 90%;
-    margin: 0 0 15px 0;
 }
 .search:focus{
     outline: 1px solid #AEC5EB;
@@ -46,7 +45,7 @@
     padding: 10px;
     background-color: #fff;
     position: absolute;
-    width: 350px;
+    width: 380px;
     height: 480px;
     overflow-y: auto;
     top: 50%;
@@ -65,4 +64,18 @@
 }
 .title a:hover i.bi-x-lg{
     color: red;
+}
+
+.modal div:nth-child(2){
+    margin: 0 0 15px 0;
+    justify-content: space-around;
+}
+
+.btn-icon{
+    color: #637492;
+    border: none;
+    background-color: transparent;
+}
+.btn-icon:hover{
+    color: #2eb873;
 }
