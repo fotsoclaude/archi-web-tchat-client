@@ -1,0 +1,44 @@
+/*=================================
+    Main section
+=================================*/
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 25vw);
+    grid-template-rows: repeat(2, 40vh) calc(40vh - 30vh);
+}
+main > div:first-child{
+    grid-row: 1 / 3;
+    grid-column: 1 / 4;
+    overflow-y: auto;
+}
+main > div:last-child{
+    grid-row: 3 / 4;
+    grid-column: 1 / 4;
+}
+
+.text{
+    width: 100%;
+    background-color: #ebebeb;
+    justify-content: space-around;
+}
+.text input{
+    width: 80%;
+    padding: 0.7vw;
+    border-radius: 0.5vw;
+    border: 1px solid #eee;
+}
+.text input:focus{
+    outline: 1px solid #a28fff;
+}
+.text button{
+    width: 10%;
+    color: #fff;
+    background-color: #780091;
+    border: none;
+    border-radius: 5vw;
+    padding: 0.7vw;
+    transition: all 0.2s ease-in-out;
+}
+.text button:hover{
+    background-color: #4c005c;
+}
