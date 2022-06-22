@@ -1,0 +1,42 @@
+/*=================================
+    Header section
+=================================*/
+a, h4{
+    text-decoration: none;
+    color: #fff;
+}
+
+a img{
+    width: 40px;
+    height: 40px;
+    border-radius: 5rem;
+    margin-right: 20px;
+}
+
+.left, .right{
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left{
+    grid-column: 1 / 2;
+    border-right: 0.5px double #637492;
+}
+.left a:last-child:hoverO i.bi-plus{
+    color: #FFBD59;
+}
+.right{
+    grid-column: 2 / 5;
+}
+
+.menu-link{
+    color: #fff;
+    font-size: large;
+    padding: 15px;
+    transition: color 0.5s ease;
+}
+
+.menu-link:hover{
+    color: #FFBD59;
+}
