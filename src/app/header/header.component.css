@@ -23,7 +23,7 @@ a img{
     grid-column: 1 / 2;
     border-right: 0.5px double #637492;
 }
-.left a:last-child:hoverO i.bi-plus{
+.left a:last-child:hover i.bi-plus{
     color: #FFBD59;
 }
 .right{
