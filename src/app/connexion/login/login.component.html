@@ -1,1 +1,30 @@
-<p>login works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="FOTSO Claude">
+    <meta name="description" content="Page de login de l'application de tchat fait par le groupe 2 dans le cadre du cours d'architecture web">
+    <title>WeTchat</title>
+</head>
+<body>
+    <main>
+        <div class="fields-container">
+            <form [formGroup] = "formdata" (ngSubmit)="onClickSubmit(formdata.value)">
+                <label for="phone">Téléphone</label>
+                <input type="tel" name="phone" id="phone" formControlName="phone">
+                <br /><br />
+                <label for="nom">Nom</label>
+                <input type="text" name="nom" id="nom" formControlName="nom"><br /><br />
+                <label for="prenom">Prénom</label>
+                <input type="text" name="prenom" id="prenom" formControlName="prenom"><br /><br />
+                <input type="submit" [disabled]="!formdata.valid" value="S'enregistrer">
+            </form>
+        </div>
+        <div class="img-container">
+
+        </div>
+    </main>
+</body>
+</html>
