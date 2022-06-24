@@ -1,15 +1,29 @@
 <main class="login">
     <div class="fields-container">
+        <h1>Log in</h1>
+        <p>Rejoingnez vos amis et discuter avec eux de votre absence.</p>
         <form [formGroup] = "formdata" (ngSubmit)="onClickSubmit(formdata.value)" class="form">
-            <label for="phone">Téléphone</label>
-            <input type="tel" name="phone" id="phone" formControlName="phone">
-            <br /><br />
-            <label for="password">Mot de passe</label>
-            <input type="password" name="password" id="password" formControlName="password"><br /><br />
-            <input type="submit" [disabled]="!formdata.valid" value="Se connecter">
+            <div class="form-group">
+                <label class="form-label" for="phone">Téléphone</label>
+                <!-- <isi-inputTelIsj
+                    id="phone"
+                    [DefaultCountry]="'cm'" 
+                    [size] = 9 
+                    [phoneFieldOnlyCountry]="['cm', 'fr']"
+                ></isi-inputTelIsj> -->
+                <input type="text" name="phone" id="phone" formControlName="phone">
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="password">Mot de passe</label>
+                <input type="password" name="password" id="password" formControlName="password">
+            </div>
+            <input [disabled]="!formdata.valid" type="submit" value="Se connecter">
         </form>
+        <div class="register">
+            <a href="/register">Vous n'avez pas de compte ?</a>
+        </div>
     </div>
     <div class="img-container">
-        <h1>Connexion</h1>
+        <h1>Se connecter</h1>
     </div>
 </main>

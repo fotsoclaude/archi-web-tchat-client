@@ -1,28 +1,101 @@
+/*============================
+        PAGE DE LOGIN 
+============================*/
 .login {
     display: flex;
-    background-color: #ccc;
     height: 100vh;
-    width: 100%;
     font-size: 20px;
+    align-items: center;
  }
 
+/*Left side of the page*/
 .fields-container {
+    width: 45%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
+    flex-direction: column;
+    padding: 0 120px;
 }
- 
+
+.fields-container h1 {
+    color: #00697A;
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.fields-container > p {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.form .form-group {
+    margin-bottom: 20px;
+}
+
+.form .form-group label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form .form-group input {
+    width: 100%;
+    height: 35px;
+    border-radius: 200px;
+    border: solid 1px rgb(204, 204, 204);
+    padding: 2px 15px ;
+}
+
+.form .form-group input:focus {
+    outline: #00697A 1.5px solid;
+}
+
+.form input[type=submit] {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 20px 0;
+    font-size: 20px;
+    color: #fff;
+    background-color: #0d5763;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 200px;
+    cursor: pointer;
+}
+
+.form input[type=submit]:hover {
+    background-color: #077485;
+}
+
+.register {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.register a {
+    text-decoration: none;
+    color: #0d5763;
+    font-size: 16px;
+    text-align: end;
+}
+   
+
+/*Right side of the page*/  
 .img-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 55vw;
     height: 100%;
-    background-color: aqua;
+    background-image: linear-gradient(to bottom left, 
+                rgba(134, 9, 252, 0.5),
+                rgba(82, 72, 219, 0.5));
 }
 
 .img-container h1 {
     font-size: 90px;
     font-weight: 200;
+    color: #fff;
 }
