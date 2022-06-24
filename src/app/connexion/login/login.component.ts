@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 
-interface loginformdata {
+interface registerformdata {
   phone: string;
-  nom: string;
-  prenom: string;
+  password: string;
 }
 
 @Component({
@@ -15,8 +14,7 @@ interface loginformdata {
 export class LoginComponent implements OnInit {
 
   phone!: string;
-  nom!:string;
-  prenom!:string;
+  password!:string;
 
   formdata !: any;
 
@@ -25,22 +23,17 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
     this.formdata = new FormGroup({
       phone: new FormControl("", Validators.compose([
-        Validators.required,
-        Validators.maxLength(9)
-      ])),
-      nom: new FormControl("", Validators.compose([
         Validators.required
       ])),
-      prenom: new FormControl("", Validators.compose([
+      password: new FormControl("", Validators.compose([
         Validators.required
       ]))
     });
   }
 
-  onClickSubmit(data: loginformdata) {
+  onClickSubmit(data: registerformdata) {
     this.phone = data.phone;
-    this.nom = data.nom;
-    this.prenom = data.prenom;
+    this.password = data.password;
   }
 
 }
