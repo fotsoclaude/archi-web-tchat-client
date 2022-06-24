@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 
-interface registerformdata {
+interface loginformdata {
   phone: string;
   password: string;
 }
@@ -31,7 +31,7 @@ export class LoginComponent implements OnInit {
     });
   }
 
-  onClickSubmit(data: registerformdata) {
+  onClickSubmit(data: loginformdata) {
     this.phone = data.phone;
     this.password = data.password;
   }

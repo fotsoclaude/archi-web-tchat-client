@@ -5,10 +5,9 @@
         <form [formGroup] = "formdata" (ngSubmit)="onClickSubmit(formdata.value)" class="form">
             <div class="form-group">
                 <label class="form-label" for="phone">Téléphone</label>
-                <!-- <isi-inputTelIsj
-                    id="phone"
+                <!-- <isi-inputTelIsj 
                     [DefaultCountry]="'cm'" 
-                    [size] = 9 
+                    [size] = 8 
                     [phoneFieldOnlyCountry]="['cm', 'fr']"
                 ></isi-inputTelIsj> -->
                 <input type="text" name="phone" id="phone" formControlName="phone">

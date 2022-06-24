@@ -1,1 +1,30 @@
-<p>register works!</p>
+<main class="register">
+    <div class="fields-container">
+        <h1>Sign up</h1>
+        <p>Rejoingnez vos amis et discuter avec eux de votre absence.</p>
+        <form [formGroup] = "formdata" (ngSubmit)="onClickSubmit(formdata.value)" class="form">
+            <div class="form-group">
+                <label class="form-label" for="phone">Téléphone</label>
+                <!-- <isi-inputTelIsj
+                    id="phone"
+                    [DefaultCountry]="'cm'" 
+                    [size] = 9 
+                    [phoneFieldOnlyCountry]="['cm', 'fr']"
+                ></isi-inputTelIsj> -->
+                <input type="text" name="phone" id="phone" formControlName="phone">
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="password">Mot de passe</label>
+                <input type="password" name="password" id="password" formControlName="password">
+            </div>
+            <input [disabled]="!formdata.valid" type="submit" value="Se connecter">
+        </form>
+        <div class="login">
+            <a routerLink="/login">Vous avez déjà un compte ?</a>
+            <a routerLink="/home">Home</a>
+        </div>
+    </div>
+    <div class="img-container">
+        <h1>S'enregistrer</h1>
+    </div>
+</main>
