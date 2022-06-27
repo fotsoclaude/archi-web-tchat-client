@@ -13,6 +13,7 @@ ul{
 body {
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    overflow-y: hidden;
 }
 
 /* Own specification css */

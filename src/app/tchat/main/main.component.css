@@ -4,7 +4,7 @@
 main{
     display: grid;
     grid-template-columns: repeat(3, 25vw);
-    grid-template-rows: repeat(2, 41.3vh) calc(100vh - (45px + 85vh));
+    grid-template-rows: repeat(2, 42vh) calc(100vh - (45px + 85vh));
 }
 main > div:first-child{
     grid-row: 1 / 3;
