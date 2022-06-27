@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ConnexionRoutingModule } from './connexion/connexion-routing.module';
 import { ConnexionModule } from './connexion/connexion.module';
+import { TchatRoutingModule } from './tchat/tchat-routing.module';
+import { TchatModule } from './tchat/tchat.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +14,9 @@ import { ConnexionModule } from './connexion/connexion.module';
   imports: [
     BrowserModule,
     ConnexionModule,
-    ConnexionRoutingModule
+    ConnexionRoutingModule,
+    TchatModule,
+    TchatRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

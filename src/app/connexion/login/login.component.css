@@ -17,7 +17,7 @@
 }
 
 .fields-container h1 {
-    color: #00697A;
+    color: #1b2a55;
     font-size: 2.5em;
     font-weight: 600;
     margin-bottom: 10px;
@@ -47,7 +47,7 @@
 }
 
 .form .form-group input:focus {
-    outline: #00697A 1.5px solid;
+    outline: #1b2a55 1.5px solid;
 }
 
 .form input[type=submit] {
@@ -57,14 +57,14 @@
     margin: 20px 0;
     font-size: 20px;
     color: #fff;
-    background-color: #0d5763;
+    background-color: #1b2a55;
     border: 1px solid rgb(204, 204, 204);
     border-radius: 200px;
     cursor: pointer;
 }
 
 .form input[type=submit]:hover {
-    background-color: #077485;
+    background-color: #0f172f;
 }
 
 .register {
@@ -76,7 +76,7 @@
 
 .register a {
     text-decoration: none;
-    color: #0d5763;
+    color: #1b2a55;
     font-size: 16px;
     text-align: end;
 }

@@ -1,6 +1,6 @@
 <main class="login">
     <div class="fields-container">
-        <h1>Log in</h1>
+        <h1>Log <a href="/tchat">in</a></h1>
         <p>Rejoingnez vos amis et discuter avec eux de votre absence.</p>
         <form [formGroup] = "formdata" (ngSubmit)="onClickSubmit(formdata.value)" class="form">
             <div class="form-group">
@@ -19,9 +19,10 @@
             <input [disabled]="!formdata.valid" type="submit" value="Se connecter">
         </form>
         <div class="register">
-            <a routerLink="/register">Vous n'avez pas de compte ?</a>
+            <a href="/register">Vous n'avez pas de compte ?</a>
         </div>
     </div>
+    
     <div class="img-container">
         <h1>Se connecter</h1>
     </div>
