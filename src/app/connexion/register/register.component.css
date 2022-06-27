@@ -67,6 +67,11 @@
     background-color: #0f172f;
 }
 
+
+::placeholder {
+    color: #cecece;
+}
+
 .login {
     margin-top: 20px;
     width: 100%;

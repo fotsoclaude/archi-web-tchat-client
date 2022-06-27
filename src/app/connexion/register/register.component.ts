@@ -27,10 +27,13 @@ export class RegisterComponent implements OnInit {
       phone: new FormControl("", Validators.compose([
         Validators.required
       ])),
-      nom: new FormControl("", Validators.compose([
+      pseudo: new FormControl("", Validators.compose([
         Validators.required
       ])),
-      prenom: new FormControl("", Validators.compose([
+      password: new FormControl("", Validators.compose([
+        Validators.required
+      ])),
+      confirm: new FormControl("", Validators.compose([
         Validators.required
       ]))
     });
