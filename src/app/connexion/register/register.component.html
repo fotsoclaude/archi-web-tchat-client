@@ -5,10 +5,9 @@
         <form [formGroup] = "formdata" (ngSubmit)="onClickSubmit(formdata.value)" class="form">
             <div class="form-group">
                 <label class="form-label" for="phone">Téléphone</label>
-                <!-- <isi-inputTelIsj
-                    id="phone"
-                    [DefaultCountry]="'cm'" 
-                    [size] = 9 
+                <!-- <isi-inputTelIsj 
+                    [DefaultCountry]="'cm'"
+                    [size] = 8 
                     [phoneFieldOnlyCountry]="['cm', 'fr']"
                 ></isi-inputTelIsj> -->
                 <input type="text" name="phone" id="phone" formControlName="phone">
@@ -20,8 +19,7 @@
             <input [disabled]="!formdata.valid" type="submit" value="Se connecter">
         </form>
         <div class="login">
-            <a routerLink="/login">Vous avez déjà un compte ?</a>
-            <a routerLink="/home">Home</a>
+            <a href='/login'>Vous avez déjà un compte ?</a>
         </div>
     </div>
     <div class="img-container">
