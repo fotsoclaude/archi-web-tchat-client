@@ -12,7 +12,7 @@ export class HeaderComponent implements OnInit {
 
   constructor(service:MyserviceService) {
     this.service = service;
-   }
+  }
 
   ngOnInit(): void {
   }
