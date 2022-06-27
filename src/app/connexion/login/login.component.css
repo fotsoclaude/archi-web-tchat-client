@@ -67,6 +67,10 @@
     background-color: #077485;
 }
 
+::placeholder {
+    color: #cecece;
+}
+
 .register {
     margin-top: 20px;
     width: 100%;
