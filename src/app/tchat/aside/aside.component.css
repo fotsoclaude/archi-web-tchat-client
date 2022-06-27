@@ -1,10 +1,22 @@
 /*=================================
     Aside section
 =================================*/
+button {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+}
+button:hover{
+    color: tomato;
+}
+
+
 .search{
     border: thin solid #e6e6e6;
     border-radius: 0.5vw;
     padding: 10px 7px;
+    margin: 10px 0;
     width: 90%;
 }
 .search:focus{
@@ -47,10 +59,13 @@
     position: absolute;
     width: 380px;
     height: 480px;
-    overflow-y: auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.modal-scrollable{
+    overflow-y: auto;
+    height: 70%;
 }
 .modal .title{
     flex-direction: column;
@@ -72,10 +87,28 @@
 }
 
 .btn-icon{
-    color: #637492;
+    color: #1b2a55;
     border: none;
     background-color: transparent;
 }
 .btn-icon:hover{
     color: #2eb873;
+}
+
+.input-group{
+    border: thin solid #e6e6e6;
+    border-radius: 0.5vw;
+    margin-bottom: 20px;
+    width: 90%;
+}
+.input-group *{
+    padding: 10px;
+    border: none;
+}
+.input-group select{
+    border-right: 1px solid #e6e6e6;
+    width: 25%;
+}
+.input-group input{
+    width: 75%;
 }

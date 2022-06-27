@@ -1,0 +1,82 @@
+/*=================================
+    Header section
+=================================*/
+a, h4{
+    text-decoration: none;
+    color: #fff;
+}
+
+div img{
+    width: 40px;
+    height: 40px;
+    border-radius: 5rem;
+}
+
+.right img{
+    margin-right: 20px;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+.left, .right{
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left{
+    grid-column: 1 / 2;
+    border-right: 0.5px double #00000031;
+}
+.left button:hover i.bi-plus{
+    color: #64a7e6;
+}
+.right{
+    grid-column: 2 / 5;
+}
+
+.left div{
+    position: relative;
+}
+
+.menu-profil{
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 8px #000000b2;
+    display: none;
+    width: 150px;
+    left: 50%;
+    top: 90%;
+}
+.menu-profil li a{
+    display: block;
+    color: #12416e;
+    padding: 20px;
+    font-size: small;
+    border-bottom: 0.5px solid #eee;
+}
+.menu-profil li:hover{
+    background-color: rgb(242, 242, 242);
+    color: #fff;
+}
+
+.profil:hover .menu-profil{
+    display: initial;
+}
+
+.menu-link{
+    color: #fff;
+    font-size: large;
+    padding: 15px;
+    transition: color 0.5s ease;
+}
+
+.menu-link:hover{
+    color: #64a7e6;
+}

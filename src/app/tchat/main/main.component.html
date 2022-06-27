@@ -1,0 +1,13 @@
+<main>
+    <div class="tchat" id="tchat">
+        <p class="msgReceived">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, nisi ab eius voluptates sapiente illo voluptas optio incidunt, ratione quam perferendis ad, veniam porro perspiciatis ut nostrum doloribus deleniti quos.</p>
+        <p class="msgSend">Yo !</p>
+        <p class="msgSend">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit cupiditate dicta vero! Perspiciatis, optio dolor dolorum sapiente, consequuntur, odio illo animi dolorem fugiat commodi doloribus id cumque tempora iste.</p>
+        <p class="msgReceived">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, nisi ab eius voluptates sapiente illo voluptas optio incidunt, ratione quam perferendis ad, veniam porro perspiciatis ut nostrum doloribus deleniti quos.</p>
+        <p class="msgSend">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit cupiditate dicta vero! Perspiciatis, optio dolor dolorum sapiente, consequuntur, odio illo animi dolorem fugiat commodi doloribus id cumque tempora iste.</p>
+    </div>
+    <div class="text d-flex align-items-center" [formGroup]="newMsgSend">
+        <input type="text" placeholder="Entrer un message !" id="msg" name="message" formControlName = "content">
+        <button (click)="onSendMessage()" >Envoyer</button>
+    </div>
+</main>

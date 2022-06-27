@@ -1,6 +1,16 @@
 <div class="left d-flex">
-    <a href="#"><img src="assets/imgs/profiles.jpeg" alt="Profil user"></a>
-    <a href="#" (click)="onOpenModal(false)"><i class="bi bi-plus bx-md"></i></a>
+    <div class="profil">
+        <img src="assets/imgs/profiles.jpeg" alt="Profil user">
+        <ul class="menu-profil">
+            <li>
+                <a href="">Mon profile<i class="bi bi-person"></i></a>
+            </li>
+            <li>
+                <a href="/login">Déconnexion<i class="bi bi-box-arrow-right"></i></a>
+            </li>
+        </ul>
+    </div>
+    <button (click)="onOpenModal(false)"><i class="bi bi-plus bx-md"></i></button>
 </div>
 
 <div class="right d-flex">

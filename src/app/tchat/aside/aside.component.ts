@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MyserviceService } from '../myservice.service';
+import { MyserviceService } from '../../myservice.service';
 import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
