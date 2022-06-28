@@ -5,20 +5,20 @@
 }
 .contact:hover{
     background-color: #eee;
+    cursor: pointer;
 }
 
 .contact .left {
     width: 15%;
 }
 .contact .right{
-    width: 75%;
-    
+    width: 80%;
 }
 
 .contact img{
-    width: 45px;
-    height: 45px;
-    border-radius: 25vw;
+    width: 60px;
+    height: 60px;
+    border-radius: 200px;
 }
 .contact .right{
     padding: 10px 8px;
