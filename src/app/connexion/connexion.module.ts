@@ -4,7 +4,6 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { InputTelIsjIsiModule } from 'input-tel-isj-isi-3';
 
 
 
@@ -17,8 +16,7 @@ import { InputTelIsjIsiModule } from 'input-tel-isj-isi-3';
   ],
   imports: [
     CommonModule,
-    ReactiveFormsModule,
-    InputTelIsjIsiModule
+    ReactiveFormsModule
   ]
 })
 export class ConnexionModule { }
