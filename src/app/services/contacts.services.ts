@@ -27,7 +27,7 @@ export class ContactsService {
             pseudo: "FOTSO Claude",
             numero: "(+237) 696 685 090",
             bio: "Étudiant en ingénierie logicielle",
-            imageUrl: 'assets/imgs/bg-main.jpg',
+            imageUrl: 'assets/img/fotsoclaude.jpg',
             createdDate: new Date()
         }
     ];
