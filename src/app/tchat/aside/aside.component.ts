@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { MyserviceService } from '../../myservice.service';
 import { FormControl, FormGroup } from '@angular/forms';
+import { ContactsService } from 'src/app/services/contacts.services';
+import { Contact } from 'src/app/models/contact.models';
+import { MyserviceService } from 'src/app/services/myservice.service';
 
 @Component({
   selector: 'app-aside',
@@ -10,12 +12,12 @@ import { FormControl, FormGroup } from '@angular/forms';
 export class AsideComponent implements OnInit {
 
   newContactForm!:FormGroup;
-
   service!:MyserviceService;
-
   isViewForm!:boolean;
 
-  constructor(service:MyserviceService) { 
+  contacts !: Contact[];
+
+  constructor(service:MyserviceService, private contactsService: ContactsService) { 
     this.service = service;
     this.isViewForm = true;
   }
@@ -25,7 +27,9 @@ export class AsideComponent implements OnInit {
       name: new FormControl(""),
       indicator : new FormControl('+237'),
       phone: new FormControl("")
-    })
+    });
+    //Ajout des contacts récuppérés du service à la vue
+    this.contacts = this.contactsService.getAllContacts();
   }
 
   onCloseModal(value:boolean){

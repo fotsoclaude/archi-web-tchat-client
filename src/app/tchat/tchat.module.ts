@@ -6,6 +6,8 @@ import { MainComponent } from './main/main.component';
 import { TchatComponent } from './tchat/tchat.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { InputTelIsjIsiModule } from 'input-tel-isj-isi-3';
+import { ContactComponent } from './contact/contact.component';
+import { ContactsListComponent } from './contacts-list/contacts-list.component';
 
 
 
@@ -14,7 +16,9 @@ import { InputTelIsjIsiModule } from 'input-tel-isj-isi-3';
     HeaderComponent,
     AsideComponent,
     MainComponent,
-    TchatComponent
+    TchatComponent,
+    ContactComponent,
+    ContactsListComponent
   ],
   imports: [
     CommonModule,

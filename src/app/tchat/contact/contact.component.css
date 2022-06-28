@@ -1,0 +1,33 @@
+.contact{
+    justify-content: space-around;
+    padding: 0 5px;
+    line-height: 1.5vw;
+}
+.contact:hover{
+    background-color: #eee;
+}
+
+.contact .left {
+    width: 15%;
+}
+.contact .right{
+    width: 75%;
+    
+}
+
+.contact img{
+    width: 45px;
+    height: 45px;
+    border-radius: 25vw;
+}
+.contact .right{
+    padding: 10px 8px;
+    border-bottom: 0.01vw solid #eee;
+}
+.contact p{
+    font-size: 0.8vw;
+}
+
+.contact h5{
+    font-size: 1vw;
+}
