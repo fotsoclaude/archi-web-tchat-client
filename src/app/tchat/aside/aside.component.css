@@ -18,6 +18,7 @@ button:hover{
     padding: 10px 7px;
     margin: 10px 0;
     width: 90%;
+    font-size: 1vw;
 }
 .search:focus{
     outline: 1px solid #AEC5EB;
@@ -53,7 +54,11 @@ button:hover{
     font-size: 0.8vw;
 }
 
-.modal{
+.contact h5{
+    font-size: 1vw;
+}
+
+.modale{
     padding: 10px;
     background-color: #fff;
     position: absolute;
@@ -63,11 +68,11 @@ button:hover{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.modal-scrollable{
+.modale-scrollable{
     overflow-y: auto;
     height: 70%;
 }
-.modal .title{
+.modale .title{
     flex-direction: column;
     align-items: flex-end;
     margin-bottom: 10px;
@@ -81,7 +86,7 @@ button:hover{
     color: red;
 }
 
-.modal div:nth-child(2){
+.modale div:nth-child(2){
     margin: 0 0 15px 0;
     justify-content: space-around;
 }

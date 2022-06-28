@@ -8,6 +8,17 @@
 
 ul{
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-size: smaller;
+    margin: 0;
+}
+
+h5{
+    font-size: medium;
 }
 
 body {
@@ -16,17 +27,17 @@ body {
 }
 
 /* Own specification css */
-.d-flex{
+.display-flex{
     display: flex;
 }
-.justify-content-center{
+.d-justify-content-center{
     justify-content: center;
 }
-.align-items-center{
+.d-align-items-center{
     align-items: center;
 }
 
-.btn{
+.button{
     background-color: #6716e9;
     color: #fff;
     padding: 1vw;
@@ -34,7 +45,7 @@ body {
     border: none;
     transition: all 0.2s ease;
 }
-.btn:hover{
+.button:hover{
     background-color: #3e0d8c;
 }
 
