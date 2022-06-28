@@ -7,15 +7,12 @@ import { ConnexionModule } from './connexion/connexion.module';
 import { TchatRoutingModule } from './tchat/tchat-routing.module';
 import { TchatModule } from './tchat/tchat.module';
 
-import { InputTelIsjIsiModule } from 'input-tel-isj-isi-3';
-
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
     BrowserModule,
-    InputTelIsjIsiModule,
     ConnexionModule,
     ConnexionRoutingModule,
     TchatModule,

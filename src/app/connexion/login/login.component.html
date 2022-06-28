@@ -6,9 +6,9 @@
             <div class="form-group">
                 <label class="form-label" for="phone">Téléphone</label>
                 <isi-inputTelIsj
-                    formControlName="phone"
                     [DefaultCountry]="'cm'" 
-                    [size] = 12 
+                    [size]=12 
+                    [phoneFieldsPlaceHolder]=false
                     [phoneFieldOnlyCountry]="['cm', 'fr']"
                 ></isi-inputTelIsj>
             </div>
