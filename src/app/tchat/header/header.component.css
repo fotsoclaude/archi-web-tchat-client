@@ -1,9 +1,13 @@
 /*=================================
     Header section
 =================================*/
-a, h4{
+a, h4, h5{
     text-decoration: none;
     color: #fff;
+    margin: 0;
+}
+h5{
+    font-size: medium;
 }
 
 div img{
@@ -72,7 +76,7 @@ button {
 
 .menu-link{
     color: #fff;
-    font-size: large;
+    font-size: medium;
     padding: 15px;
     transition: color 0.5s ease;
 }

@@ -23,7 +23,8 @@ main > div:last-child{
 }
 .text input{
     width: 80%;
-    padding: 0.7vw;
+    padding: 0.5vw;
+    font-size: 0.9vw;
     border-radius: 0.5vw;
     border: 1px solid #eee;
 }
@@ -33,14 +34,15 @@ main > div:last-child{
 .text button{
     width: 10%;
     color: #fff;
-    background-color: #780091;
+    background-color: #6716e9;
     border: none;
     border-radius: 5vw;
-    padding: 0.7vw;
+    padding: 6px;
+    font-size: 0.9vw;
     transition: all 0.2s ease-in-out;
 }
 .text button:hover{
-    background-color: #4c005c;
+    background-color: #3e0d8c;
 }
 
 .tchat{
