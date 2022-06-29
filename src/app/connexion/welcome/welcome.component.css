@@ -68,7 +68,7 @@ section{
     background-position: bottom center;
     background-size: contain;
     flex-direction: column;
-    height: 80vh;
+    height: 90vh;
 }
 .accueil *{
     margin: 1vw 0;
