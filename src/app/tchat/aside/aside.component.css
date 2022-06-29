@@ -92,3 +92,17 @@ button:hover{
 .input-group input{
     width: 75%;
 }
+
+.tel-container {
+    position: relative;
+    width: 100%;
+}
+
+.tel-container .tel {
+    position: absolute;
+    width: 120%;
+}
+
+.next-tel {
+    margin-top: 80px;
+}

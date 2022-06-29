@@ -40,21 +40,18 @@
                 <input type="text" name="name" id="name" placeholder="Nom et prénom" class="search" formControlName = "name">
             </div>
             <div class="display-flex d-justify-content-center">
-                <!-- <div class="input-group">
-                    <select name="country" id="country">
-                        <option value="CM">+237</option>
-                        <option value="FR">+33</option>
-                    </select>
-                    <input type="number" name="numero" id="numero" class="input-field">
-                </div> -->
-                <isi-inputTelIsj 
+                <div class="tel-container">
+                    <isi-inputTelIsj
+                        class="tel"
                         [DefaultCountry]="'cm'" 
-                        [size]=12 
+                        [borderRadius]=200
+                        [size]=12
                         [phoneFieldsPlaceHolder]=false
                         [phoneFieldOnlyCountry]="['cm', 'fr']"
                     ></isi-inputTelIsj>
+                </div>
             </div>
-            <div class="display-flex d-justify-content-center">
+            <div class="display-flex d-justify-content-center next-tel">
                 <input type="submit" value="Enregistrer" class="button">
             </div>
         </div>
