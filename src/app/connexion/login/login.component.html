@@ -5,14 +5,18 @@
         <form [formGroup] = "formdata" (ngSubmit)="onClickSubmit(formdata.value)" class="form">
             <div class="form-group">
                 <label class="form-label" for="phone">Téléphone</label>
-                <isi-inputTelIsj
-                    [DefaultCountry]="'cm'" 
-                    [size]=12 
-                    [phoneFieldsPlaceHolder]=false
-                    [phoneFieldOnlyCountry]="['cm', 'fr']"
-                ></isi-inputTelIsj>
+                <div class="tel-container">
+                    <isi-inputTelIsj
+                        class="tel"
+                        [DefaultCountry]="'cm'" 
+                        [borderRadius]=200
+                        [size]=12
+                        [phoneFieldsPlaceHolder]=false
+                        [phoneFieldOnlyCountry]="['cm', 'fr']"
+                    ></isi-inputTelIsj>
+                </div>
             </div>
-            <div class="form-group">
+            <div class="form-group next-tel">
                 <label class="form-label" for="password">Mot de passe</label>
                 <input type="password" name="password" id="password" formControlName="password">
             </div>

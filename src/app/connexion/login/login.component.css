@@ -38,12 +38,26 @@
     margin-bottom: 10px;
 }
 
+.tel-container {
+    position: relative;
+    width: 100%;
+}
+
+.tel-container .tel {
+    position: absolute;
+    width: 460%;
+}
+
+.form .next-tel {
+    margin-top: 80px;
+}
+
 .form .form-group input {
     width: 100%;
     height: 35px;
     border-radius: 200px;
     border: solid 1px rgb(204, 204, 204);
-    padding: 2px 15px ;
+    padding: 2px 15px;
 }
 
 .form .form-group input:focus {
