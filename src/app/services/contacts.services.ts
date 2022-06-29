@@ -19,7 +19,7 @@ export class ContactsService {
             pseudo: "Epale Yvan",
             numero: "(+237) 657 012 557",
             bio: "Étudiant en ingénierie logicielle",
-            imageUrl: 'assets/imgs/bg-main.jpg',
+            imageUrl: 'assets/img/epale.jpg',
             createdDate: new Date()
         },
         {
